@@ -17,8 +17,7 @@ sudo apt install gnome-tweaks -y
 #Устанавливаем консольный мониторинг ресурсов Btop
 sudo apt install btop -y
 #Включаем поддержку приложений Flatpak. Подключаем репозиторий Flathub и устанавливаем Центр приложений Gnome
-sudo apt install flatpak gnome-software-plugin-flatpak gnome-software -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub com.github.tchx84.Flatseal
+sudo apt install -y flatpak gnome-software-plugin-flatpak gnome-software -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #Устанавливаем расширения рабочего окружения Gnome
 sudo apt install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-extension-manager
 #Поддержка принтеров и сканеров
@@ -40,6 +39,7 @@ sudo flatpak install -y flathub org.prismlauncher.PrismLauncher
 sudo flatpak install -y flathub org.videolan.VLC
 sudo flatpak install -y flathub org.gnome.Boxes
 sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
+sudo flatpak install -y flathub com.github.tchx84.Flatseal
 
 #Установка docker
 ./dockerinstall.sh
