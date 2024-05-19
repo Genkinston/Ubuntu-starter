@@ -25,12 +25,12 @@ sudo apt install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-extens
 sudo apt install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-dev libtiff5-dev cups printer-driver-gutenprint
 #Установка софта для работы виртуальных машин
 sudo apt install -y virt-manager qemu-system libvirt-daemon-system qemu-utils
-sudo usermod -aG libvirt,kvm $USER
+sudo usermod -aG libvirt,kvm "$USER"
 #Установка прочего софта apt
-sudo apt install -y nala gdebi curl htop neofetch bpytop clang cargo libc6-i386 libc6-x32 libu2f-udev samba-common-bin exfat-fuse default-jdk curl wget unrar linux-headers-$(uname -r) linux-headers-generic git gstreamer1.0-vaapi corectrl rpi-imager distrobox
+sudo apt install -y nala gdebi curl htop neofetch bpytop clang cargo libc6-i386 libc6-x32 libu2f-udev samba-common-bin exfat-fuse default-jdk curl wget unrar linux-headers-"$(uname -r)" linux-headers-generic git gstreamer1.0-vaapi corectrl rpi-imager distrobox
 #Установка прочего софта flatpak
 sudo flatpak install -y flathub com.ultimaker.cura ru.yandex.Browser org.telegram.desktop com.valvesoftware.Steam com.discordapp.Discord com.vscodium.codium org.prismlauncher.PrismLauncher org.videolan.VLC org.gnome.Boxes io.github.dvlv.boxbuddyrs
-
+sudo flatpak install -y flathub com.heroicgameslauncher.hgl
 #Установка docker
 ./dockerinstall.sh
 
