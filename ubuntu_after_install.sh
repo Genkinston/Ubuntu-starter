@@ -3,7 +3,7 @@
 sudo apt update && sudo apt dist-upgrade -y
 sudo snap refresh
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
-sudo apt install ubuntu-restricted-extras  -y
+sudo apt install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
 apt-cache search nautilus
 sudo apt install nautilus-admin exe-thumbnailer -y
@@ -29,8 +29,18 @@ sudo usermod -aG libvirt,kvm "$USER"
 #Установка прочего софта apt
 sudo apt install -y nala gdebi curl htop neofetch bpytop clang cargo libc6-i386 libc6-x32 libu2f-udev samba-common-bin exfat-fuse default-jdk curl wget unrar linux-headers-"$(uname -r)" linux-headers-generic git gstreamer1.0-vaapi corectrl rpi-imager distrobox
 #Установка прочего софта flatpak
-sudo flatpak install -y flathub com.ultimaker.cura ru.yandex.Browser org.telegram.desktop com.valvesoftware.Steam com.discordapp.Discord com.vscodium.codium org.prismlauncher.PrismLauncher org.videolan.VLC org.gnome.Boxes io.github.dvlv.boxbuddyrs
+sudo flatpak install -y flathub com.ultimaker.cura 
 sudo flatpak install -y flathub com.heroicgameslauncher.hgl
+sudo flatpak install -y flathub ru.yandex.Browser
+sudo flatpak install -y flathub org.telegram.desktop
+sudo flatpak install -y flathub com.valvesoftware.Steam
+sudo flatpak install -y flathub com.discordapp.Discord
+sudo flatpak install -y flathub com.vscodium.codium
+sudo flatpak install -y flathub org.prismlauncher.PrismLauncher
+sudo flatpak install -y flathub org.videolan.VLC
+sudo flatpak install -y flathub org.gnome.Boxes
+sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
+
 #Установка docker
 ./dockerinstall.sh
 
