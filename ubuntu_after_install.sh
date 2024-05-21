@@ -31,7 +31,7 @@ newgrp libvirt
 newgrp kvm
 newgrp vboxusers
 #Установка прочего софта apt
-sudo apt install -y nala gdebi curl htop neofetch bpytop clang cargo libc6-i386 libc6-x32 libu2f-udev samba-common-bin exfat-fuse default-jdk curl wget unrar linux-headers-"$(uname -r)" linux-headers-generic git gstreamer1.0-vaapi corectrl rpi-imager distrobox
+sudo apt install -y nala gdebi curl htop neofetch bpytop clang cargo copyq libc6-i386 libc6-x32 libu2f-udev samba-common-bin exfat-fuse default-jdk curl wget unrar linux-headers-"$(uname -r)" linux-headers-generic git gstreamer1.0-vaapi corectrl rpi-imager distrobox filezilla
 #Установка прочего софта flatpak
 sudo flatpak install -y flathub com.ultimaker.cura 
 sudo flatpak install -y flathub com.heroicgameslauncher.hgl
