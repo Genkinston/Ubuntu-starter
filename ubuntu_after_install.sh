@@ -11,6 +11,7 @@ while true; do
   [Cc]*)
     #Установка Flatpak и софта
     ./base_soft.sh
+    continue
     ;;
   [Ss]*)
     echo -e "\n"
