@@ -15,7 +15,7 @@ sudo flatpak install -y flathub org.videolan.VLC
 sudo flatpak install -y flathub org.gnome.Boxes
 sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
 sudo flatpak install -y flathub com.github.tchx84.Flatseal
-
+sudo flatpak install -y io.github.shiftey.Desktop
 echo -e "\n====================\nDONE\n====================\n"
 
 exit
