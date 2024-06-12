@@ -3,7 +3,7 @@ set -e
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
 nala install -y ubuntu-restricted-extras \
 #Настраиваем контекстное меню файлового менеджера Nautilus
-nala install nautilus-admin exe-thumbnailer\
+nautilus-admin exe-thumbnailer\
 #Устанавливаем дополнительную поддержку архиваторов
 p7zip-rar rar unrar unace arj cabextract \
 #Устанавливаем программы для работы с пакетами
