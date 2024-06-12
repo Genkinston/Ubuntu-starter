@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 #Установка nala для ускорения работы apt
 sudo apt install nala -y
 #Обновляем систему

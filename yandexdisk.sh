@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 davfs2_secret="/etc/davfs2/secrets"
 davfs2_secret_add_string="/media/yandexdisk $yandexid $yandexpass"
 
