@@ -11,6 +11,7 @@ while true; do
   echo -e "[4] git\n"
   echo -e "[5] prism launcher\n"
   echo -e "[6] yandex disk\n"
+  echo -e "[7] virtual machine soft\n"
   echo -e "--------------------------\n"
   read -r -n 1 -p "Select script for install: " script
 
@@ -33,6 +34,9 @@ while true; do
     ;;
   6)
     bash ./yandexdisk.sh
+    ;;
+  7)
+    bash ./vm.sh
     ;;
   esac
 done
