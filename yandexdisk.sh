@@ -3,10 +3,6 @@ set -e
 davfs2_secret="/etc/davfs2/secrets"
 davfs2_secret_add_string="/media/yandexdisk $yandexid $yandexpass"
 
-#Вводим логин и пароль для Yandex disk
-read -r -p $'\n'"yandex id login: " yandexid
-read -r -p $'\n'"yandex app pass: " yandexpass
-
 #Установка необходимого пакета для работы облака как сетевого диска
 sudo apt-get install davfs2 -y
 #Добавит текущего юзера в группу доступа к сервису сетевого диска
@@ -15,6 +11,10 @@ sudo usermod -a -G davfs2 "$USER"
 sudo mkdir /media/yandexdisk
 #Установит права владения на неё текущим пользователем
 sudo chown -R "$USER":"$USER" /media/yandexdisk/
+#Вводим логин и пароль для Yandex disk для записи в fstab
+echo -e "Write login and password to save them in fstab for automount disk"
+read -r -p $'\n'"yandex id login: " yandexid
+read -r -p $'\n'"yandex app pass: " yandexpass
 #Добавить логин и пароль в папку секретов для работы davfs2
 while IFS= read -r line; do
  if [[ "$line" == *"$davfs2_secret_add_string"* ]]; then
