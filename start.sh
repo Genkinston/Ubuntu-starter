@@ -15,6 +15,7 @@ while true; do
   echo -e "[5] prism launcher\n"
   echo -e "[6] yandex disk\n"
   echo -e "[7] virtual machine soft\n"
+  echo -e "[8] docker cli\n"
   echo -e "--------------------------\n"
   echo -e "[0] exit\n"
   read -r -n 1 -p "Select script for install: " script
@@ -41,6 +42,9 @@ while true; do
     ;;
   7)
     sudo bash ./vm.sh
+    ;;
+  8)
+    sudo bash ./dockerinstall.sh
     ;;
   0)
     echo -e "\n\nOK\n"
