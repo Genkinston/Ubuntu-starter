@@ -46,11 +46,74 @@ sudo flatpak install -y flathub org.gnome.Boxes
 sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
 sudo flatpak install -y flathub com.github.tchx84.Flatseal
 
-#Установка Git Cli и Git Desktop
-./git.sh
+echo -e "\n====================\nGit install\n===================="
+
+while true; do
+  read -r -n 1 -p "Continue or Skip? (c|s) " cs
+  case $cs in
+  [Cc]*)
+    #Установка Git Cli и Git Desktop
+    ./git.sh
+    ;;
+  [Ss]*)
+    echo -e "\n"
+    break
+    ;;
+  *) echo -e "\nPlease answer C or S!\n" ;;
+  esac
+done
+
+echo -e "\n====================\nDocker install\n===================="
+
+
+while true; do
+  read -r -n 1 -p "Continue or Skip? (c|s) " cs
+  case $cs in
+  [Cc]*)
 #Установка docker
 ./dockerinstall.sh
+    ;;
+  [Ss]*)
+    echo -e "\n"
+    break
+    ;;
+  *) echo -e "\nPlease answer C or S!\n" ;;
+  esac
+done
+
+
+echo -e "\n====================\nYandex disk install\n===================="
+
+
+while true; do
+  read -r -n 1 -p "Continue or Skip? (c|s) " cs
+  case $cs in
+  [Cc]*)
 #Установка сетевого диска Yandex
 ./yandexdisk.sh
+    ;;
+  [Ss]*)
+    echo -e "\n"
+    break
+    ;;
+  *) echo -e "\nPlease answer C or S!\n" ;;
+  esac
+done
+
+echo -e "\n====================\nPrism Laucher install\n===================="
+
+while true; do
+  read -r -n 1 -p "Continue or Skip? (c|s) " cs
+  case $cs in
+  [Cc]*)
 #Установка Prism Laucher
 ./prismlauncher.sh
+    ;;
+  [Ss]*)
+    echo -e "\n"
+    break
+    ;;
+  *) echo -e "\nPlease answer C or S!\n" ;;
+  esac
+done
+
