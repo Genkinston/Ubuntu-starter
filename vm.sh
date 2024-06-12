@@ -9,4 +9,4 @@ newgrp vboxusers
 
 echo -e "\n====================\nDONE\n====================\n"
 
-exit
+exit 0
