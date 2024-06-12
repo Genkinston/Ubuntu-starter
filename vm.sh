@@ -2,7 +2,7 @@
 set -e
 #Установка софта для работы виртуальных машин
 sudo nala install -y virt-manager qemu-system libvirt-daemon-system qemu-utils virtualbox
-sudo usermod -aG libvirt,kvm,vboxusers "$USER"
+sudo usermod -aG libvirt,kvm,vboxusers "$SUDO_USER"
 newgrp libvirt
 newgrp kvm
 newgrp vboxusers 
