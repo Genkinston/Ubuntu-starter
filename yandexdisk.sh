@@ -22,12 +22,12 @@ while IFS= read -r line; do
  break
  else
  echo "Строка не найдена в файле."
- echo "$davfs2_secret_add_string" | sudo tee -a $davfs2_secret
+ sudo echo "$davfs2_secret_add_string" | sudo tee -a $davfs2_secret
  fi
 done < "$davfs2_secret"
 
 #Записываем данные в fstab для автомонтирования сетевого диска
-echo "https://webdav.yandex.ru /media/yandexdisk davfs gid=$USER,uid=$USER,auto 0 0" | sudo tee -a /etc/fstab
+sudo echo "https://webdav.yandex.ru /media/yandexdisk davfs gid=$USER,uid=$USER,auto 0 0" | sudo tee -a /etc/fstab
 #Монтируем диск в текущий сеанс
 sudo mount -a
 
