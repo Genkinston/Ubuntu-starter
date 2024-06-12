@@ -5,5 +5,5 @@
 Использовать
 
 ```bash
-./ubuntu_after_install
+bash ./start
 ```
