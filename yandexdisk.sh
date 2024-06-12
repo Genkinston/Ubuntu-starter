@@ -36,4 +36,4 @@ sudo mount -a
 
 echo -e "\n====================\nDONE\n====================\n"
 
-exit
+exit 0
