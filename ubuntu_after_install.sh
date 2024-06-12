@@ -3,7 +3,7 @@
 sudo apt update && sudo apt dist-upgrade -y
 sudo snap refresh
 #Установка nala для ускорения работы apt
-sudo nala install nala
+sudo apt install nala
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
 sudo nala install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
