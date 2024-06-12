@@ -18,8 +18,6 @@ sudo nala install synnalaic gdebi  -y
 sudo nala install gnome-tweaks -y
 #Устанавливаем консольный мониторинг ресурсов Btop
 sudo nala install btop -y
-#Включаем поддержку приложений Flatpak. Подключаем репозиторий Flathub и устанавливаем Центр приложений Gnome
-sudo nala install -y flatpak gnome-software-plugin-flatpak gnome-software -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #Устанавливаем расширения рабочего окружения Gnome
 sudo nala install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-extension-manager
 #Поддержка принтеров и сканеров
@@ -41,6 +39,8 @@ while true; do
   read -r -n 1 -p "Continue or Skip? (c|s) " cs
   case $cs in
   [Cc]*)
+    #Включаем поддержку приложений Flatpak. Подключаем репозиторий Flathub и устанавливаем Центр приложений Gnome
+    sudo nala install -y flatpak gnome-software-plugin-flatpak gnome-software -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     #Установка прочего софта flatpak
     sudo flatpak install -y flathub com.ultimaker.cura 
     sudo flatpak install -y flathub com.heroicgameslauncher.hgl
