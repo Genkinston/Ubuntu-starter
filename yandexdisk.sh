@@ -30,3 +30,5 @@ done < "$davfs2_secret"
 echo "https://webdav.yandex.ru /media/yandexdisk davfs gid=$USER,uid=$USER,auto 0 0" | sudo tee -a /etc/fstab
 #Монтируем диск в текущий сеанс
 sudo mount -a
+
+echo -e "\n====================\nDONE\n====================\n"
