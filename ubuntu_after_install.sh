@@ -48,4 +48,5 @@ sudo flatpak install -y flathub com.github.tchx84.Flatseal
 
 #Установка docker
 ./dockerinstall.sh
-
+#Установка сетевого диска Yandex
+./yandexdisk.sh
