@@ -1,9 +1,11 @@
 #!/bin/bash
 
-yandexid=" "
-yandexpass=" "
 davfs2_secret="/etc/davfs2/secrets"
 davfs2_secret_add_string="/media/yandexdisk $yandexid $yandexpass"
+
+#Вводим логин и пароль для Yandex disk
+read -r -p $'\n'"yandex id login: " yandexid
+read -r -p $'\n'"yandex app pass: " yandexpass
 
 #Установка необходимого пакета для работы облака как сетевого диска
 sudo apt-get install davfs2 -y
