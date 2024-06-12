@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#Установка nala для ускорения работы apt
-sudo apt install nala -y
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
 sudo nala install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
