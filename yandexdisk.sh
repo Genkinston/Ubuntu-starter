@@ -11,7 +11,7 @@ sudo usermod -a -G davfs2 "$USER"
 if [ ! -d /media/yandexdisk ]; then
     sudo mkdir /media/yandexdisk
 else
-    pass
+    echo "folder already create"
 fi
 #Установит права владения на неё текущим пользователем
 sudo chown -R "$USER":"$USER" /media/yandexdisk/
