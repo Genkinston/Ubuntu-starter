@@ -10,8 +10,7 @@ while true; do
   case $cs in
   [Cc]*)
     #Установка Flatpak и софта
-    ./base_soft.sh
-    continue
+    bash ./base_soft.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -28,7 +27,7 @@ while true; do
   case $cs in
   [Cc]*)
     #Установка Flatpak и софта
-    ./extra_soft.sh
+    bash ./extra_soft.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -45,7 +44,7 @@ while true; do
   case $cs in
   [Cc]*)
     #Установка Flatpak и софта
-    ./flatpak.sh
+    bash ./flatpak.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -61,7 +60,7 @@ while true; do
   case $cs in
   [Cc]*)
     #Установка Git Cli и Git Desktop
-    ./git.sh
+    bash ./git.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -78,8 +77,8 @@ while true; do
   read -r -n 1 -p "Continue or Skip? (c|s) " cs
   case $cs in
   [Cc]*)
-#Установка docker
-./dockerinstall.sh
+    #Установка docker
+    bash ./dockerinstall.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -97,8 +96,8 @@ while true; do
   read -r -n 1 -p "Continue or Skip? (c|s) " cs
   case $cs in
   [Cc]*)
-#Установка сетевого диска Yandex
-./yandexdisk.sh
+    #Установка сетевого диска Yandex
+    bash ./yandexdisk.sh
     ;;
   [Ss]*)
     echo -e "\n"
@@ -114,8 +113,8 @@ while true; do
   read -r -n 1 -p "Continue or Skip? (c|s) " cs
   case $cs in
   [Cc]*)
-#Установка Prism Laucher
-./prismlauncher.sh
+    #Установка Prism Laucher
+    bash ./prismlauncher.sh
     ;;
   [Ss]*)
     echo -e "\n"
