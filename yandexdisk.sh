@@ -24,7 +24,7 @@ read -r -p $'\n'"yandex app pass: " yandexpass
 
 #Добавить логин и пароль в папку секретов для работы davfs2
 if [ -f $davfs2_secret ]; then
-  sudo grep -q "$davfs2_secret_add_string" || tee -a $davfs2_secret
+  sudo grep -q "$davfs2_secret_add_string" || sudo tee -a $davfs2_secret
 else
  echo "File $davfs2_secret not created"
 fi
