@@ -13,6 +13,7 @@ while true; do
   echo -e "[6] yandex disk\n"
   echo -e "[7] virtual machine soft\n"
   echo -e "--------------------------\n"
+  echo -e "[0] exit\n"
   read -r -n 1 -p "Select script for install: " script
 
   case $script in
@@ -37,6 +38,10 @@ while true; do
     ;;
   7)
     bash ./vm.sh
+    ;;
+  0)
+    echo -e "\n\nOK\n"
+    exit 0
     ;;
   esac
 done
