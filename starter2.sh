@@ -16,7 +16,6 @@ while true; do
 
   case $script in
 
-  # установим node-exporter
   1)
     bash ./base_soft.sh
     ;;
