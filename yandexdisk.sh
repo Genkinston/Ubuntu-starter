@@ -8,7 +8,11 @@ sudo apt-get install davfs2 -y
 #Добавит текущего юзера в группу доступа к сервису сетевого диска
 sudo usermod -a -G davfs2 "$USER"
 #Создаст папку куда будет монтироваться сетевой диск
-sudo mkdir /media/yandexdisk
+if [ ! -d /media/yandexdisk ]; then
+    sudo mkdir /media/yandexdisk
+else
+    pass
+fi
 #Установит права владения на неё текущим пользователем
 sudo chown -R "$USER":"$USER" /media/yandexdisk/
 #Вводим логин и пароль для Yandex disk для записи в fstab
