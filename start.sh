@@ -22,25 +22,25 @@ while true; do
   case $script in
 
   1)
-    sudo bash ./base_soft.sh
+    bash ./base_soft.sh
     ;;
   2)
-    sudo bash ./extra_soft.sh
+    bash ./extra_soft.sh
     ;;
   3)
-    sudo bash ./flatpak.sh
+    bash ./flatpak.sh
     ;;    
   4)
-    sudo bash ./git.sh
+    bash ./git.sh
     ;;  
   5)
-    sudo bash ./prismlauncher.sh
+    bash ./prismlauncher.sh
     ;;
   6)
-    sudo bash ./yandexdisk.sh
+    bash ./yandexdisk.sh
     ;;
   7)
-    sudo bash ./vm.sh
+    bash ./vm.sh
     ;;
   0)
     echo -e "\n\nOK\n"
