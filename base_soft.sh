@@ -21,4 +21,6 @@ sudo nala install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-d
 #Установка библиотек помогающий в работе python
 sudo nala install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev pkg-config make
 
+exit
+
    echo -e "\n====================\nDONE\n====================\n"
