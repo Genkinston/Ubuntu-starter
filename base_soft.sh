@@ -5,7 +5,7 @@ sudo apt install nala -y
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
 sudo nala install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
-nala-cache search nautilus
+apt-cache search nautilus
 sudo nala install nautilus-admin exe-thumbnailer -y
 nautilus -q
 #Устанавливаем дополнительную поддержку архиваторов
