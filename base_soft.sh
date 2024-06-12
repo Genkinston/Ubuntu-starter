@@ -1,23 +1,23 @@
 #!/bin/bash
 set -e
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
-sudo nala install ubuntu-restricted-extras -y
+nala install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
 apt-cache search nautilus
-sudo nala install nautilus-admin exe-thumbnailer -y
+nala install nautilus-admin exe-thumbnailer -y
 nautilus -q
 #Устанавливаем дополнительную поддержку архиваторов
-sudo nala install p7zip-rar rar unrar unace arj cabextract -y
+nala install p7zip-rar rar unrar unace arj cabextract -y
 #Устанавливаем программы для работы с пакетами
-sudo nala install synaptic gdebi  -y
+nala install synaptic gdebi  -y
 #Устанавливаем инструмент GNOME Tweaks для настройки рабочего окружения
-sudo nala install gnome-tweaks -y
+nala install gnome-tweaks -y
 #Устанавливаем расширения рабочего окружения Gnome
-sudo nala install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-extension-manager
+nala install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-extension-manager
 #Поддержка принтеров и сканеров
-sudo nala install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-dev libtiff5-dev cups printer-driver-gutenprint
+nala install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-dev libtiff5-dev cups printer-driver-gutenprint
 #Установка библиотек помогающий в работе python
-sudo nala install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev pkg-config make
+nala install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev pkg-config make
 
 echo -e "\n====================\nDONE\n====================\n"
 
