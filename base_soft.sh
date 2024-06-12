@@ -22,9 +22,3 @@ sudo nala install -y chrome-gnome-shell gnome-shell-extensions gnome-shell-exten
 sudo nala install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-dev libtiff5-dev cups printer-driver-gutenprint
 #Установка библиотек помогающий в работе python
 sudo nala install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev pkg-config make
-#Установка софта для работы виртуальных машин
-sudo nala install -y virt-manager qemu-system libvirt-daemon-system qemu-utils virtualbox
-sudo usermod -aG libvirt,kvm,vboxusers "$USER"
-newgrp libvirt
-newgrp kvm
-newgrp vboxusers 
