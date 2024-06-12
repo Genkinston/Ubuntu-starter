@@ -5,3 +5,5 @@ sudo usermod -aG libvirt,kvm,vboxusers "$USER"
 newgrp libvirt
 newgrp kvm
 newgrp vboxusers 
+
+echo -e "\n====================\nDONE\n====================\n"
