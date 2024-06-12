@@ -16,3 +16,5 @@ sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
 sudo flatpak install -y flathub com.github.tchx84.Flatseal
 
 echo -e "\n====================\nDONE\n====================\n"
+
+exit

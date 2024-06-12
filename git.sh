@@ -19,3 +19,6 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 sudo apt update && sudo apt install -y github-desktop
 
 echo -e "\n====================\nDONE\n====================\n"
+
+exit
+

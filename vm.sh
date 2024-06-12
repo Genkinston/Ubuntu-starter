@@ -7,3 +7,5 @@ newgrp kvm
 newgrp vboxusers 
 
 echo -e "\n====================\nDONE\n====================\n"
+
+exit

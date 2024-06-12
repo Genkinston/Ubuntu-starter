@@ -32,3 +32,5 @@ echo "https://webdav.yandex.ru /media/yandexdisk davfs gid=$USER,uid=$USER,auto 
 sudo mount -a
 
 echo -e "\n====================\nDONE\n====================\n"
+
+exit

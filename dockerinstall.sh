@@ -21,4 +21,7 @@ sudo systemctl restart docker
 
 echo -e "\n====================\nDONE\n====================\n"
 
+exit
+
+
 

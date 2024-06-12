@@ -5,3 +5,6 @@ sudo nala update
 sudo nala install prismlauncher -y
 
 echo -e "\n====================\nDONE\n====================\n"
+
+exit
+

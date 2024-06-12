@@ -11,7 +11,7 @@ nautilus -q
 #Устанавливаем дополнительную поддержку архиваторов
 sudo nala install p7zip-rar rar unrar unace arj cabextract -y
 #Устанавливаем программы для работы с пакетами
-sudo nala install synnalaic gdebi  -y
+sudo nala install synaptic gdebi  -y
 #Устанавливаем инструмент GNOME Tweaks для настройки рабочего окружения
 sudo nala install gnome-tweaks -y
 #Устанавливаем расширения рабочего окружения Gnome
@@ -21,6 +21,6 @@ sudo nala install -y gcc libtool libssl-dev libc-dev libjpeg-turbo8-dev libpng-d
 #Установка библиотек помогающий в работе python
 sudo nala install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev pkg-config make
 
-exit
+echo -e "\n====================\nDONE\n====================\n"
 
-   echo -e "\n====================\nDONE\n====================\n"
+exit
