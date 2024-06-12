@@ -46,7 +46,11 @@ sudo flatpak install -y flathub org.gnome.Boxes
 sudo flatpak install -y flathub io.github.dvlv.boxbuddyrs
 sudo flatpak install -y flathub com.github.tchx84.Flatseal
 
+#Установка Git Cli и Git Desktop
+./git.sh
 #Установка docker
 ./dockerinstall.sh
 #Установка сетевого диска Yandex
 ./yandexdisk.sh
+#Установка Prism Laucher
+./prismlauncher.sh
