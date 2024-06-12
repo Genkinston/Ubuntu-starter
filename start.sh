@@ -31,7 +31,7 @@ while true; do
     bash ./git.sh
     ;;  
   5)
-    bash ./pairmlaucher.sh
+    bash ./prismlaucher.sh
     ;;
   6)
     bash ./yandexdisk.sh
