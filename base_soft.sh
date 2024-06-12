@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 #Установка пакета кодеков мультимедия ubuntu-restricted-extras
 sudo nala install ubuntu-restricted-extras -y
 #Настраиваем контекстное меню файлового менеджера Nautilus
