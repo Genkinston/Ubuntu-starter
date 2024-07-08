@@ -8,5 +8,5 @@ nala install prismlauncher -y
 
 echo -e "\n====================\nDONE\n====================\n"
 
-exit
+exit 0
 
