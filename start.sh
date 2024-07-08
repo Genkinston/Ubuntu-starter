@@ -13,7 +13,7 @@ while true; do
   echo -e "[3] flatpak and soft\n"
   echo -e "[4] git\n"
   echo -e "[5] prism launcher\n"
-  echo -e "[6] yandex disk\n"
+  echo -e "[6] appimage\n"
   echo -e "[7] virtual machine soft\n"
   echo -e "[8] docker cli\n"
   echo -e "--------------------------\n"
@@ -38,7 +38,7 @@ while true; do
     sudo bash ./prismlauncher.sh
     ;;
   6)
-    sudo bash ./yandexdisk.sh
+    sudo bash ./appimage.sh
     ;;
   7)
     sudo bash ./vm.sh
