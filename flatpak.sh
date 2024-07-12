@@ -12,7 +12,6 @@ flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub com.vscodium.codium
 flatpak install -y flathub org.prismlauncher.PrismLauncher
 flatpak install -y flathub org.videolan.VLC
-flatpak install -y flathub org.gnome.Boxes
 flatpak install -y flathub io.github.dvlv.boxbuddyrs
 flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y io.github.shiftey.Desktop
