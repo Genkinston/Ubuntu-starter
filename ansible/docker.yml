@@ -1,0 +1,8 @@
+- name: docker
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install Docker
+    script:
+      cmd: scripts/docker.sh
