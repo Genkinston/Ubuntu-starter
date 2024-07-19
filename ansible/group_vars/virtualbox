@@ -1,7 +1,3 @@
-ansible_user: lurk
-ansible_password: qwe123
-#become_user: root
-#become_pass: qwe123
-#ansible_become: yes 
-#ansible_become_method: sudo
-ansible_sudo_pass: qwe123
+ansible_user: 
+ansible_password: 
+ansible_sudo_pass: 
