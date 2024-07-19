@@ -15,9 +15,7 @@ nala update
 nala install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 usermod -aG docker "$SUDO_USER"
 echo
-echo "Press ctrl + D for back after use newgrp"
-echo
-newgrp docker
+echo "For use docker required reboot"
 systemctl enable docker
 systemctl start docker
 systemctl restart docker
