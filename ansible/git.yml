@@ -1,0 +1,8 @@
+- name: git
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install Git
+    script:
+      cmd: scripts/git.sh
