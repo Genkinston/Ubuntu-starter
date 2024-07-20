@@ -1,0 +1,24 @@
+- name: Vm
+  hosts: all
+  become: true
+  vars:
+    vmpkg:
+      - virt-manager
+      - qemu-system
+      - libvirt-daemon-system
+      - qemu-utils
+      - virtualbox
+      - gnome-boxes
+
+  tasks:
+    - name: Install vm soft
+      package:
+        pkg: "{{ vmpkg }}"
+        state: present
+
+    - name: Add user to vm groups
+      ansible.builtin.command:
+        cmd: "usermod -aG libvirt,kvm,vboxusers {{ ansible_user }}"
+
+    - name: Reboot
+      ansible.builtin.reboot:
