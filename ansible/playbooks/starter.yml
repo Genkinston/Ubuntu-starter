@@ -1,0 +1,96 @@
+- name: Starter
+  hosts: all
+  become: true
+  vars:
+    base_packages:
+      - ubuntu-restricted-extras
+      - nautilus-admin
+      - exe-thumbnailer
+      - p7zip-rar
+      - rar
+      - unrar
+      - unace
+      - arj
+      - cabextract
+      - synaptic
+      - gdebi
+      - gnome-tweaks
+      - chrome-gnome-shell
+      - gnome-shell-extensions
+      - gnome-shell-extension-manager
+      - gcc
+      - libtool
+      - libssl-dev
+      - libc-dev
+      - libjpeg-turbo8-dev
+      - libpng-dev
+      - libtiff5-dev
+      - cups
+      - printer-driver-gutenprint
+      - build-essential
+      - zlib1g-dev
+      - libncurses5-dev
+      - libgdbm-dev
+      - libnss3-dev
+      - libssl-dev
+      - libsqlite3-dev
+      - libreadline-dev
+      - libffi-dev
+      - curl
+      - libbz2-dev
+      - pkg-config
+      - make
+    extra_packages:
+      - gdebi
+      - curl
+      - htop
+      - btop
+      - neofetch
+      - bpytop
+      - clang
+      - cargo
+      - copyq
+      - libc6-i386
+      - libc6-x32
+      - libu2f-udev
+      - samba-common-bin
+      - exfat-fuse
+      - default-jdk
+      - curl
+      - wget
+      - unrar
+      - linux-headers-generic
+      - git
+      - gstreamer1.0-vaapi
+      - corectrl
+      - rpi-imager
+      - distrobox
+      - filezilla
+      - steam-devices
+      - lutris
+      - flatpak
+      - gnome-software
+      - gnome-software-plugin-flatpak
+
+
+  tasks:
+    - name: Ping
+      ping:
+
+    - name: Update apt cache
+      apt:
+        update_cache: true
+
+    - name: Upgrade apt
+      apt:
+        upgrade: true
+
+    - name: Install base package
+      package:
+        pkg: "{{ base_packages }}"
+        state: present
+
+    - name: Install extra packages
+      package:
+        pkg: "{{ extra_packages }}"
+        state: present
