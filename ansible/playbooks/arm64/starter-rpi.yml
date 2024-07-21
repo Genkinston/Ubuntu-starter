@@ -70,6 +70,11 @@
       - gnome-software
       - gnome-software-plugin-flatpak
       - nala
+      - yarn
+      - npm
+      - nodejs
+      - nginx
+
 
 
   tasks:
