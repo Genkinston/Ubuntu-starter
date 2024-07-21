@@ -1,0 +1,8 @@
+- name: Starter-rpi
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install pikiss
+      script:
+        cmd: scripts/pikiss.sh

@@ -5,4 +5,4 @@
   tasks:
   - name: Install Docker (script)
     script:
-      cmd: ../scripts/docker.sh
+      cmd: scripts/docker.sh

@@ -5,4 +5,4 @@
   tasks:
     - name: Install Git
       script:
-        cmd: ../scripts/git.sh
+        cmd: scripts/git.sh

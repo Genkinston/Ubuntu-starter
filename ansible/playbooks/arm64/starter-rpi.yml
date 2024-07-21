@@ -39,6 +39,7 @@
       - libbz2-dev
       - pkg-config
       - make
+      - dialog
     extra_packages:
       - gdebi
       - curl
@@ -68,6 +69,7 @@
       - flatpak
       - gnome-software
       - gnome-software-plugin-flatpak
+      - nala
 
 
   tasks:
