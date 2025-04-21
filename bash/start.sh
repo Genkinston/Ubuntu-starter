@@ -3,7 +3,7 @@ set -e
 #Установка nala для ускорения работы apt
 sudo apt install nala -y
 #Обновляем систему
-sudo nala update && sudo nala upgrade -y
+sudo apt update && sudo apt upgrade -y
 sudo snap refresh
 
 while true; do
