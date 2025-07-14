@@ -12,10 +12,11 @@ while true; do
   echo -e "[2] extra soft\n"
   echo -e "[3] flatpak and soft\n"
   echo -e "[4] git\n"
-  echo -e "[5] prism launcher\n"
+  echo -e "[5] games\n"
   echo -e "[6] appimage\n"
   echo -e "[7] virtual machine soft\n"
   echo -e "[8] docker cli\n"
+  echo -e "[9] programming\n"
   echo -e "--------------------------\n"
   echo -e "[0] exit\n"
   read -r -n 1 -p "Select script for install: " script
@@ -35,7 +36,7 @@ while true; do
     sudo bash ./git.sh
     ;;  
   5)
-    sudo bash ./prismlauncher.sh
+    sudo bash ./games.sh
     ;;
   6)
     sudo bash ./appimage.sh
@@ -45,6 +46,9 @@ while true; do
     ;;
   8)
     sudo bash ./dockerinstall.sh
+    ;;
+  9)
+    sudo bash ./programming.sh
     ;;
   0)
     echo -e "\n\n
