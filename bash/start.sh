@@ -19,7 +19,7 @@ while true; do
   echo -e "[9] programming\n"
   echo -e "--------------------------\n"
   echo -e "[0] exit\n"
-  read -r -n 1 -p "Select script for install: " script
+  read -r -n 3 -p "Select script for install: " script
 
   case $script in
 
