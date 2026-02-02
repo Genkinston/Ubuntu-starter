@@ -116,7 +116,8 @@ EOF
     sudo apt install -y apt-transport-https code ansible ansible-lint
   fi
 
-  sudo flatpak install -y flathub io.github.shiftey.Desktop
+#  sudo flatpak install -y flathub io.github.shiftey.Desktop
+# Не устанавливается без впн
   echo -e "\n====================\nDONE\n====================\n"
 }
 
