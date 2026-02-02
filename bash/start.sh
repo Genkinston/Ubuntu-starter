@@ -39,12 +39,12 @@ extra_soft () {
 
 flatpak_install () {
   #Включаем поддержку приложений Flatpak. Подключаем репозиторий Flathub и устанавливаем Центр приложений Gnome
-  sudo apt install -y flatpak gnome-software-plugin-flatpak gnome-software -y && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  sudo apt install -y flatpak gnome-software-plugin-flatpak gnome-software -y && sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   #Установка прочего софта flatpak
-  flatpak install -y flathub org.telegram.desktop
-  flatpak install -y flathub org.videolan.VLC
-  flatpak install -y flathub com.github.tchx84.Flatseal
-  flatpak install -y io.github.shiftey.Desktop
+  sudo flatpak install -y flathub org.telegram.desktop
+  sudo flatpak install -y flathub org.videolan.VLC
+  sudo flatpak install -y flathub com.github.tchx84.Flatseal
+  sudo flatpak install -y io.github.shiftey.Desktop
   echo -e "\n====================\nDONE\n====================\n"
 }
 
@@ -83,7 +83,7 @@ echo -e "\n====================\nDONE\n====================\n"
 
 docker_install () {
   if [[ ! -x "/usr/bin/docker" ]]; then
-    curl -fsSL https://get.docker.com -o get-docker.sh %% \
+    curl -fsSL https://get.docker.com -o get-docker.sh && \
     sudo sh get-docker.sh && \
     rm -f get-docker.sh && \
     sudo usermod -aG docker "$USER"
@@ -95,9 +95,9 @@ docker_install () {
 programming_soft () {
   #Установка ПО для программирования
   if [[ ! -x "/usr/bin/code" ]]; then
-    sudo apt-get install wget gpg &&
-    wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg &&
-    sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg &&
+    sudo apt-get install wget gpg && \
+    wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
+    sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg && \
     rm -f microsoft.gpg
     sudo apt update
     sudo apt install -y apt-transport-https code ansible ansible-lint
