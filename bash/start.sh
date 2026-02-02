@@ -42,7 +42,8 @@ flatpak_install () {
   sudo apt install -y flatpak gnome-software-plugin-flatpak gnome-software -y && sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   #Установка прочего софта flatpak
   sudo flatpak install -y flathub org.telegram.desktop
-  sudo flatpak install -y flathub org.videolan.VLC
+#  sudo flatpak install -y flathub org.videolan.VLC
+#  без впн не устанавливается
   sudo flatpak install -y flathub com.github.tchx84.Flatseal
   sudo flatpak install -y io.github.shiftey.Desktop
   echo -e "\n====================\nDONE\n====================\n"
