@@ -45,7 +45,6 @@ flatpak_install () {
 #  sudo flatpak install -y flathub org.videolan.VLC
 #  без впн не устанавливается
   sudo flatpak install -y flathub com.github.tchx84.Flatseal
-  sudo flatpak install -y io.github.shiftey.Desktop
   echo -e "\n====================\nDONE\n====================\n"
 }
 
