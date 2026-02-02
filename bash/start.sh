@@ -95,14 +95,13 @@ docker_install () {
 programming_soft () {
   # Установка ПО для программирования
   if ! command -v code >/dev/null 2>&1; then
-    sudo apt-get update
     sudo apt-get install -y wget gpg
 
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
     sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg
     rm -f microsoft.gpg
 
-    sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null <<EOF
+    sudo tee /etc/apt/sources.list.d/vscode.sources > /dev/null <<EOF
 Types: deb
 URIs: https://packages.microsoft.com/repos/code
 Suites: stable
