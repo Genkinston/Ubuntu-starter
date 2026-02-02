@@ -51,7 +51,7 @@ flatpak_install () {
 games_soft () {
   sudo dpkg --add-architecture i386
   sudo apt update
-  sudo apt install -y steam steam-devices lutris
+  sudo apt install -y steam-installer steam-devices lutris
   echo -e "\n====================\nDONE\n====================\n"
 }
 
