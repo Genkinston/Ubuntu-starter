@@ -131,7 +131,8 @@ while true; do
   echo -e "[8] docker cli\n"
   echo -e "[9] programming\n"
   echo -e "--------------------------\n"
-  echo -e "[10] exit\n"
+  echo -e "[ALL] install all software scripts\n"
+  echo -e "[11] exit\n"
   read -r -n 3 -p "Select script for install: " script
 
   case $script in
@@ -174,7 +175,18 @@ while true; do
     programming_soft
     #sudo bash ./programming.sh
     ;;
-  10)
+  all | ALL)
+    update
+    base_soft
+    extra_soft
+    flatpak_install
+    games_soft
+    appimage_soft
+    vm_soft
+    docker_install
+    programming_soft
+    ;;
+  11)
     echo -e "\n\n
     ░░░░░░░░▀████▀▄▄░░░░░░░░░░░░░░▄█
     ░░░░░░░░░░█▀░░░░▀▀▄▄▄▄▄░░░░▄▄▀▀█
