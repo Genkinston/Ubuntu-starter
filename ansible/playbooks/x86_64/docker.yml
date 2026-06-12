@@ -1,8 +1,0 @@
-- name: Docker
-  hosts: all
-  become: true
-
-  tasks:
-  - name: Install Docker (script)
-    script:
-      cmd: scripts/docker.sh

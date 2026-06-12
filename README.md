@@ -1,32 +1,33 @@
 # Ubuntu-starter
 
-Маленький проект по настройки Ubuntu 24.04 после установки одним скриптом.
+Скрипт для настройки Ubuntu 24.04 после установки.
 
-Прежде чем клонировать проект нужно установить git.
+## Установка
 
 ```bash
-sudo apt install git
+sudo apt install git -y
+git clone https://github.com/Genkinston/Ubuntu-starter.git
+cd Ubuntu-starter
 ```
 
-Начало работы
+## Использование
 
 ```bash
-bash ./start
+bash bash/start.sh
 ```
 
-Альтернативно можно использовать ansible.
-Но сперва нужно включить ssh на свежей системе.
+Интерактивное меню:
 
-```bash
-sudo apt install ssh -y
-sudo systemctl enable ssh.service
 ```
-
-Далее заполнить переменные в `/group_vars/main`
-И указать хосты в `inventory.ini`
-
-Использовать
-
-```bash
-ansible-playbook starter.yml 
+[0] update system
+[1] base soft
+[2] extra soft
+[3] flatpak and soft
+[4] games
+[5] appimage
+[6] virtual machine soft
+[7] docker cli
+[8] programming
+[ALL] install all
+[9] exit
 ```
