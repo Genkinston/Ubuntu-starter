@@ -47,8 +47,10 @@ update () {
 
 base_soft () {
   check_internet || return
+  sudo apt install -y debconf-utils
   echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-  sudo apt install -y ubuntu-restricted-extras
+  echo ttf-mscorefonts-installer msttcorefonts/present-mscorefonts-eula note | sudo debconf-set-selections
+  sudo DEBIAN_FRONTEND=noninteractive apt install -y ubuntu-restricted-extras
   sudo apt install -y nautilus-admin exe-thumbnailer
   sudo apt install -y p7zip-rar rar unrar unace arj cabextract
   sudo apt install -y gdebi
