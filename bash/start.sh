@@ -47,6 +47,7 @@ update () {
 
 base_soft () {
   check_internet || return
+  echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
   sudo apt install -y ubuntu-restricted-extras
   sudo apt install -y nautilus-admin exe-thumbnailer
   sudo apt install -y p7zip-rar rar unrar unace arj cabextract
